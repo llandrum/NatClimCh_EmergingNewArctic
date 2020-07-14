@@ -11,7 +11,7 @@ You will need to change locations for the data files.
 
 Also, each figure has multiple steps to create the necessary data file from the CMIP5-MMLE. These intermediary data files are not saved here, although the scripts to make them are saved here and the CMIP5-MMLE data are publicly available. 
 
-
+Main Figures
 Figure 1
 Figure1_rev.NH_SIE.CMIP_MMLE.ncl
 
@@ -116,14 +116,9 @@ LE.40sim.NH.freeze_thaw_day.min60percent.1920-2100
 Which in turn are made with
 netCDF_freeze_thaw_day.CMIP_MMLE.ncl
 
-Supplementary Figures
-Figure 1
-SuppFigure1.CMIP5_MMLE.min_max_NH_SIE.histograms.ncl
-
-Uses same files used in (main) Figure 1.
-
-Figure 2
-SuppFigure2.CMIP5_MMLE.NH_SIE.ndecades.ncl
+Extended Data Figures
+Extended Data Figure 1
+ExtendedDataFigure1.CMIP5_MMLE.NH_SIE.ndecades.ncl
 monthly_clim.10_yrstats.CanESM2.50_sim.1950-2091.nc
 monthly_clim.10_yrstats.GFDL-CM3.20_sim.1920-2091.nc
 monthly_clim.10_yrstats.GFDL-ESM2M.30_sim.1950-2091.nc
@@ -132,12 +127,12 @@ monthly_clim.10_yrstats.LE.40_sim.1920-2091.nc
 
 climatologies are made with:
 netCDF_annual_NH_clim.ncl
-this uses ice_vol files (see Figure 3).
+this uses ice_vol files (see Main Figure 3).
 
-Figure 3
-SuppFigure3.min_max_allsims_SIE_MMLE.ncl
+Extended Data Figure 2
+ExtendedDataFigure2.min_max_allsims_SIE_MMLE.ncl
 
-Uses same monthly data as Supplementary Figure 2.
+Uses same monthly data as Extended Data Figure 1.
 Also uses Walsh data:
 ice_ext_MHolland_regions_Walsh_extended_ArcticSIC.1850-2017.nc
 
@@ -145,15 +140,21 @@ made with:
 pre_proc_Walsh_extendedSIC_MHolland_NHregions.ncl
 along with downloaded Walsh extended data set (from NSIDC).
 
-Figure 4.
-SuppFigure4.CMIP5_MMLE.monthly_tas_emerg.ncl
-uses tas emergence files used in main Figure 2.
+Extended Data Figure 3.
+ExtendedDataFigure3.CMIP5_MMLE.monthly_tas_emerg.ncl
+uses tas emergence files used in Main Figure 2.
 
-Figures 5-6
-SuppFigures5-6.map_ndiff_decadal_monthly_var_ice.ncl
-Uses same files created for main Figure 2
+Extended Data Figures 4-5
+ExtendedDataFigures5-6.map_ndiff_decadal_monthly_var_ice.ncl
+Uses same files created for Main Figure 2
 
-Figure 7-9
-SuppFigures7-9.map_CMIP5_ndecade_drain.ncl
-Uses same files created for main Figure 4
+Extended Data Figures 7-9
+ExtendedDataFigures6-8.map_CMIP5_ndecade_drain.ncl
+Uses same files created for Main Figure 4
+
+Supplementary Figures
+Supplementary Figure 1
+SuppFigure1.CMIP5_MMLE.min_max_NH_SIE.histograms.ncl
+
+Uses same files used in Main Figure 1.
 
